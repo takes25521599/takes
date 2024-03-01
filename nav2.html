@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3 - Navigation Bar 2</title>
+
+    <style>
+        body{
+            background-color: #f2f2f2;
+            font-family: 'Poppins', sans-serif;
+            padding: 1%;
+        }
+
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            border-bottom: 4px solid #3BB9AD;
+        }
+
+        li{
+            font-stretch: expanded;
+            float: left;
+            padding-top: 13px;
+            padding-right: 30px;
+            padding-bottom: 13px;
+            padding-left: 15px;
+            margin-right: 10px;
+        }
+
+        li.left{
+        padding-left: 30px;
+        padding-right: 30px;
+        }
+
+        .active{
+            background:#3BB9AD;
+            transform: perspective(4px) rotateX(1deg);
+            margin-left: 5px;
+            border-top-right-radius: 7px;
+            border-top-left-radius: 7px;
+        }
+
+        .active a{
+            color:#f2f2f2;
+        }
+
+        a{
+            text-decoration: none;
+            color:#3b3c36;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="home" class="active left"><a href="#home">Home</a></li>
+        <li id="product"><a href="#product">Products</a></li>
+        <li id="company"><a href="#company">Company</a></li>
+        <li id="contact"><a href="#contact">Contact</a></li>
+    </ul>
+</body>
+</html>
